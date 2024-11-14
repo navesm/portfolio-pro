@@ -1,23 +1,43 @@
 .header {
   background-color: #444;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: static;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-.links-list {
-  text-decoration: none;
-  font-weight: bold;
+.navbar {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin-left: auto;
+  justify-content: space-between
 }
 
-.links-list a {
+.navbar ScrollLink {
   color: #6f9;
+
+}
+
+.nav-link {
+  display: flex;
+  gap: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-link:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 }

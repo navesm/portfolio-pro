@@ -1,11 +1,12 @@
 import React from 'react';
 import Card from '../Card/Card.jsx';
+import './Projects.css';
 
 const Projects = () => {
   const projects = [
     { title: 'Focus Fit', description: 'The best dang Study and Exercise Timer out there.', link: 'https://focusfitapp.netlify.app' },
-    { title: 'Project One', description: 'This is the first project.', link: '#' },
-    { title: 'Project One', description: 'This is the first project.', link: '#' }
+    { title: 'Project Two', description: 'This is the second project.', link: '#' },
+    { title: 'Project Three', description: 'This is the third project.', link: '#' }
   ];
 
   return (

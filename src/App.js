@@ -5,6 +5,8 @@ import './App.css';
 import { Link as ScrollLink } from 'react-scroll';
 import NavBar from './components/NavBar/NavBar';
 import Projects from './components/projects/Projects.jsx';
+import Home from './components/home/Home.jsx';
+import Contact from './components/contact/Contact.jsx';
 
 function App() {
   const [showButton, setShowButton] = useState(null);
@@ -29,15 +31,18 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="title">Hi, I'm Steven</h1>
       <NavBar />
-      <section id="home" data-aos="fade-up" > Home Section </section>
+      <section className='section-wrapper'>
+        <Home />
+      </section>
       <section id="about" data-aos="fade-left" data-aos-delay='50' data-aos-duration='1000'>About</section>
       <section className="section-wrapper" id="projects" data-aos="fade-right" data-aos-delay='75' data-aos-duration='1000'>
         <Projects />
       </section>
-      <section id="experience" data-aos="fade-left" data-aos-delay='75' data-aos-duration='1000'>Experience</section>
-      <section id="contact" data-aos="fade-up" data-aos-delay='75' data-aos-duration='1000'>Contact</section>
+      <section id="skills" data-aos="fade-left" data-aos-delay='75' data-aos-duration='1000'>Interests</section>
+      <section className="section-wrapper" id="contact" data-aos="fade-up" data-aos-delay='75' data-aos-duration='1000'>
+        <Contact className="contact" />
+      </section>
 
       {showButton && (
         <ScrollLink

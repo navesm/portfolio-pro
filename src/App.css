@@ -6,6 +6,13 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
 .App {
   color: #6f9;
   display: flex;
@@ -17,7 +24,7 @@ html {
 }
 
 section {
-  padding: 200px 20px;
+  padding: 100px 40px;
   min-height: 100vh;
   border: 1px groove #ccc
 }
@@ -52,4 +59,10 @@ section {
 
 .back-to-top:hover {
   opacity: 1;
+}
+
+.contact {
+  padding: 40px 100px;
+  min-height: 100vh;
+  border: 1px line #ccc
 }

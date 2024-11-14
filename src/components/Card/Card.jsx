@@ -6,13 +6,14 @@ const Card = ({ title, description, link }) => {
     <div className="card">
       <h3>{title}</h3>
       <p>{description}</p>
-      <img alt="focus fit project screenshot"></img>
+      <img alt=""></img>
       <a href={link}
         target="_blank"
         rel="noopener noreferrer"
         className="card-link"
       >
-        View Project
+        <span>View {title}</span>
+
       </a>
     </div>
   )

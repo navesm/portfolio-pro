@@ -1,0 +1,23 @@
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Courier New', Courier, monospace
+}
+
+
+.hero-section {
+  display: flex;
+  align-items: center;
+}
+
+.typed-text {
+  font-size: 1.5rem;
+  color: #5ad1a2;
+  /* margin-top: 10px; */
+  font-family: 'Courier New', Courier, monospace
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
