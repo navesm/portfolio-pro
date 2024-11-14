@@ -6,7 +6,7 @@ import profileImage from '../../profile.png';
 function Home() {
   return (
     <section className="hero-section">
-      <div>
+      <div className="home">
         <h1>Hi, I'm Steven</h1>
         <ReactTyped
           className="typed-text"

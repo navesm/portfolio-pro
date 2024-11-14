@@ -32,15 +32,13 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <section className='section-wrapper'>
-        <Home />
-      </section>
+      <Home className="home" />
       <section id="about" data-aos="fade-left" data-aos-delay='50' data-aos-duration='1000'>About</section>
       <section className="section-wrapper" id="projects" data-aos="fade-right" data-aos-delay='75' data-aos-duration='1000'>
         <Projects />
       </section>
-      <section id="skills" data-aos="fade-left" data-aos-delay='75' data-aos-duration='1000'>Interests</section>
-      <section className="section-wrapper" id="contact" data-aos="fade-up" data-aos-delay='75' data-aos-duration='1000'>
+      <section id="skills" data-aos="fade-left" data-aos-delay='75' data-aos-duration='1000'>Skills</section>
+      <section className="section-wrapper" id="contact" data-aos="fade-right" data-aos-delay='75' data-aos-duration='1000'>
         <Contact className="contact" />
       </section>
 

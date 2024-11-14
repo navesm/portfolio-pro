@@ -1,8 +1,14 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 20px 0;
+  padding: 100px 40px 0px 40px;
   background-color: #333;
 }
 

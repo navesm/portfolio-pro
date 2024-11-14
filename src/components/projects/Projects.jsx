@@ -14,12 +14,14 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <Card
-            key={index}
-            title={project.title}
-            description={project.description}
-            link={project.link}
-          />
+          <a href={project.link}>
+            <Card
+              key={index}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+            />
+          </a>
         ))}
       </div>
     </section>

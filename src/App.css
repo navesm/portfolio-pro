@@ -24,19 +24,28 @@ img {
 }
 
 section {
-  padding: 100px 40px;
-  min-height: 100vh;
-  border: 1px groove #ccc
+  min-height: 85vh;
+  /* border: 1px dotted #ccc */
 }
 
 .section-wrapper {
   background: transparent;
   padding: 0;
   margin: 0;
-  border: none;
   width: auto;
   height: auto;
 }
+
+.contact {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+.home {
+  padding-top: 50px;
+  margin-top: 0;
+}
+
 
 .back-to-top {
   position: fixed;
@@ -54,15 +63,24 @@ section {
   font-size: 14px;
   z-index: 1000;
   opacity: 0.8;
-  transition: opacity 0.3x ease;
+  transition: opacity 0.3s ease;
 }
 
 .back-to-top:hover {
   opacity: 1;
 }
 
-.contact {
-  padding: 40px 100px;
-  min-height: 100vh;
-  border: 1px line #ccc
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+
+  .back-to-top {
+    font-size: 12px;
+  }
 }

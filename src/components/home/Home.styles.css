@@ -7,12 +7,13 @@ h1 {
 .hero-section {
   display: flex;
   align-items: center;
+  padding-top: 0;
 }
 
 .typed-text {
   font-size: 1.5rem;
   color: #5ad1a2;
-  /* margin-top: 10px; */
+  margin-top: 10px;
   font-family: 'Courier New', Courier, monospace
 }
 
