@@ -4,9 +4,9 @@ import './Projects.css';
 
 const Projects = () => {
   const projects = [
-    { title: 'Focus Fit', description: 'The best dang Study and Exercise Timer out there.', link: 'https://focusfitapp.netlify.app' },
-    { title: 'Project Two', description: 'This is the second project.', link: '#' },
-    { title: 'Project Three', description: 'This is the third project.', link: '#' }
+    { title: 'Focus Fit', description: ' React | Supabase. The best dang exercise and study timer out there', link: 'https://focusfitapp.netlify.app', bgColor: "mediumblue" },
+    { title: 'Project Two', description: 'This is the second project.', link: '#', bgColor: '#333' },
+    { title: 'Project Three', description: 'This is the third project.', link: '#', bgColor: 'green' }
   ];
 
   return (
@@ -20,6 +20,8 @@ const Projects = () => {
               title={project.title}
               description={project.description}
               link={project.link}
+              bgColor={project.bgColor}
+              textColor={project.textColor}
             />
           </a>
         ))}

@@ -9,7 +9,6 @@
   justify-content: center;
   gap: 20px;
   padding: 100px 40px 0px 40px;
-  background-color: #333;
 }
 
 .icon {
@@ -20,4 +19,20 @@
 
 .icon:hover {
   color: #5ad1a2;
+}
+
+.form {
+  color: darkGreen;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button {
+  background-color: Green;
+  color: whitesmoke;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button:hover {
+  cursor: pointer;
 }
