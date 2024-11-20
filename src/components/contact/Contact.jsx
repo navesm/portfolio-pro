@@ -7,9 +7,15 @@ function Contact() {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleOpenModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSuccessMessage('');
+    setErrorMessage('');
+    setFormData({ name: '', email: '', message: '' })
+  }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,9 +35,11 @@ function Contact() {
         setSuccessMessage('Your message was sent successfully!');
         setFormData({ name: '', email: '', message: '' });
       } else {
-        setSuccessMessage('Something went wrong. Please try again later.');
+        setErrorMessage('Something went wrong. Please try again later.');
+        console.error("Form submission error", response.statusText);
       }
     } catch (error) {
+      setErrorMessage('An error occurred. Please try again later.');
       console.error('Form submission error:', error);
     }
   };
@@ -55,6 +63,7 @@ function Contact() {
       </footer>
       <Modal show={showModal} onClose={handleCloseModal}>
         {successMessage && <p>{successMessage}</p>}
+        {errorMessage && <p className="error">{errorMessage}</p>}
         <form
           className="form"
           onSubmit={handleSubmit}
@@ -64,7 +73,7 @@ function Contact() {
           data-netlify-honeypot="bot-field"
         >
           <div>
-            <input type="hidden" name="bot=field" />
+            <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <label>
               Name:
@@ -104,6 +113,10 @@ function Contact() {
           <button className="button" type="submit">Send</button>
         </form>
       </Modal>
+
+      <form name="contact" method="POST" data-netlify="true" style={{ display: 'none' }}>
+        <input type="hidden" name="form-name" value="contact" />
+      </form>
     </div>
   )
 }
