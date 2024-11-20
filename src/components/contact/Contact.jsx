@@ -61,6 +61,9 @@ function Contact() {
           className="icon"
           onClick={handleOpenModal}
         />
+        <form name="contact" method="POST" data-netlify="true" style={{ display: 'none' }}>
+          <input type="hidden" name="form-name" value="contact" />
+        </form>
       </footer>
       <Modal show={showModal} onClose={handleCloseModal}>
         {successMessage && <p>{successMessage}</p>}
@@ -116,9 +119,7 @@ function Contact() {
         </form>
       </Modal>
 
-      <form name="contact" method="POST" data-netlify="true" style={{ display: 'none' }}>
-        <input type="hidden" name="form-name" value="contact" />
-      </form>
+
     </div>
   )
 }
