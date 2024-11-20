@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import Modal from '../modal/Modal.jsx';
 import './Contact.css';
 
