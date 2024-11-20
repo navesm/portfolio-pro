@@ -6,7 +6,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.card.has-link:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -35,4 +35,9 @@
 .card-link:hover {
   background-color: #00ccff;
   color: #ffffff;
+}
+
+.card.skill-card:hover {
+  transform: translateY(-10px);
+  cursor: default;
 }

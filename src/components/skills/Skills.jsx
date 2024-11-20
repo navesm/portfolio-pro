@@ -7,7 +7,7 @@ import './Skills.css';
 function Skills() {
 
   const skills = [
-    { title: "JavaScript", description: "Intimately familiar with the language of the web", icon: <FaJsSquare />, bgColor: "#F7df1e", textColor: "#000" },
+    { title: "JavaScript", description: "The language of the Web", icon: <FaJsSquare />, bgColor: "#F7df1e", textColor: "#000" },
     { title: "Python", description: "The most popular scripting and AI/ML choice", icon: <FaPython />, bgColor: "#306998", textColor: "#FFD43B" },
     { title: "React", description: "Building Scalable SPA's", icon: <FaReact />, bgColor: "#61dafb", textColor: "#20232A" },
     { title: "Jupyter Notebook", description: "Data analysis, Math-heavy computation, ML/DL/AI", icon: <SiJupyter />, bgColor: "#f37626" },

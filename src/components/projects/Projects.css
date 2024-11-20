@@ -16,6 +16,13 @@ h2 {
   padding: 2rem;
 }
 
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
 @media(max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;

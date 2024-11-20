@@ -1,27 +1,26 @@
 import React from 'react';
-
+import './About.css';
 
 function About() {
   return (
-    <div>
+    <div className="about-container">
       <h2>About</h2>
       <h3>At a glance</h3>
-      <p>I love math and computer science. I spend as much of my time learning and using them to solve real problems.
-        One of my favorite things is working with a new concept and struggling through it until you can finally get the "aha" moment and really understand why it works.
+      <p>Mathematics and computer science are more than academic pursuits - they represent the excitement
+        of problem-solving and the thrill of those breakthrough moments when complex concepts finally click into place.
+        This passion for understanding drives my excitement and commitment to continuous learning and real-world application for new skills.
         <br></br>
-        For several years, I was learning these on my own, and really enjoying it, but it came time to get serious about my study.
       </p>
       <br></br>
-      <p>Currently, I am a Junior in the Computer Science/Software Engineering program and Southern New Hampshire University.
-        <br></br>
-        I have a 3.9 GPA and completed classes include but are not limited to:
+      <p>Currently pursuing a Computer Science/Software Engineering degree at Southern New Hampshire
+        University with a 3.96 GPA. My prior academic foundations include:
         <br></br>
         <ul>
           <li>
-            Intro to App Development
+            Application Development
           </li>
           <li>
-            Intro to Structured Database Environments
+            Structured Database Environments
           </li>
           <li>
             Discrete Math
@@ -35,8 +34,14 @@ function About() {
         </ul>
       </p>
       <br></br>
-      <p>And while I'm pursuing my formal education, I am constantly improving my skills through projects and books. For example, I'm brushing back up on Calculus so I can familiarize myself with gradient descent to better understand Machine Learning and Neural Networks.
-        Furthermore, I have been working on the projects you can check out below. At the moment I am working on a Deep Learning course in my own time in order to craft my own model that I will integrate into my Next.js food blog.
+      <p>Beyond formal education, my current ongoing self-directed learning focuses on advanced topics like
+        Machine Learning and Neural Networks, supported by a refresher in Calculus and gradient descent. Current projects
+        include developing a custom Deep Learning model for integration into a Next.js food blog, demonstrating practical application
+        of theoretical frameworks.
+        <br></br>
+        <br></br>
+        The portfolio below showcases various projects that reflect both technical capabilities and commitment to continuous growth
+        in software engineering.
       </p>
 
     </div>

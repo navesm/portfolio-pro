@@ -6,7 +6,8 @@ const Projects = () => {
   const projects = [
     { title: 'Focus Fit', description: ' React | Supabase. The best dang exercise and study timer out there', link: 'https://focusfitapp.netlify.app', bgColor: "mediumblue" },
     { title: 'Project Two', description: 'This is the second project.', link: '#', bgColor: '#333' },
-    { title: 'Project Three', description: 'This is the third project.', link: '#', bgColor: 'green' }
+    { title: 'Project Three', description: 'This is the third project.', link: '#', bgColor: 'green' },
+    { title: 'Project Four', description: 'This is the fourth project.', link: '#', bgColor: 'rebeccapurple' }
   ];
 
   return (
@@ -16,6 +17,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <a href={project.link}>
             <Card
+              className="project-card"
               key={index}
               title={project.title}
               description={project.description}

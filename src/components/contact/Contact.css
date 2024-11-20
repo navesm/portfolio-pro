@@ -27,6 +27,7 @@
 }
 
 .button {
+  size: 1rem;
   background-color: Green;
   color: whitesmoke;
   border-radius: 10px;
