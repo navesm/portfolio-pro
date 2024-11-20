@@ -18,11 +18,12 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const form = e.target;
     try {
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
+        body: new URLSearchParams(new FormData(form)).toString(),
       });
       if (response.ok) {
         setSuccessMessage('Your message was sent successfully!');
@@ -54,8 +55,17 @@ function Contact() {
       </footer>
       <Modal show={showModal} onClose={handleCloseModal}>
         {successMessage && <p>{successMessage}</p>}
-        <form className="form" onSubmit={handleSubmit}>
+        <form
+          className="form"
+          onSubmit={handleSubmit}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
           <div>
+            <input type="hidden" name="bot=field" />
+            <input type="hidden" name="form-name" value="contact" />
             <label>
               Name:
               <input
