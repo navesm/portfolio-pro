@@ -32,6 +32,7 @@ function Contact() {
         body: new URLSearchParams(new FormData(form)).toString(),
       });
       if (response.ok) {
+        console.log('Form submitted successfully:', response);
         setSuccessMessage('Your message was sent successfully!');
         setFormData({ name: '', email: '', message: '' });
       } else {
@@ -73,8 +74,9 @@ function Contact() {
           data-netlify-honeypot="bot-field"
         >
           <div>
-            <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
+
             <label>
               Name:
               <input
