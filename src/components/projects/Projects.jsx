@@ -16,7 +16,10 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <a href={project.link}>
+          <a href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Card
               className="project-card"
               key={index}
