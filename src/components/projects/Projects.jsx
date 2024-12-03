@@ -5,10 +5,9 @@ import focusFitImage from '../../focus-fit.png';
 
 const Projects = () => {
   const projects = [
-    { title: 'Focus Fit', description: ' React | Supabase. The best dang exercise and study timer out there', link: 'https://focusfitapp.netlify.app', bgColor: "mediumblue", imageUrl: focusFitImage },
-    { title: 'Project Two', description: 'This is the second project.', link: '#', bgColor: '#333' },
-    { title: 'Project Three', description: 'This is the third project.', link: '#', bgColor: 'green' },
-    { title: 'Project Four', description: 'This is the fourth project.', link: '#', bgColor: 'rebeccapurple' }
+    { title: 'Focus Fit', description: ' React | Supabase. The best dang exercise and study timer out there', link: 'https://focusfitapp.netlify.app', bgColor: "darkblue", imageUrl: focusFitImage },
+    { title: 'YouKanDoIt TaskBoard', description: 'A personal Kanban board for all your productivity needs.', link: '#', bgColor: '#333' },
+    { title: 'RealTime Chat App', description: 'Work in Progress. Check back soon!', link: '#', bgColor: '#049C67' }
   ];
 
   return (

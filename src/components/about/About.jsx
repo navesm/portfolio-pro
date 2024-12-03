@@ -35,9 +35,9 @@ function About() {
       </p>
       <br></br>
       <p>Beyond formal education, my current ongoing self-directed learning focuses on advanced topics like
-        Machine Learning and Neural Networks, supported by a refresher in Calculus and gradient descent. Current projects
-        include developing a custom Deep Learning model for integration into a Next.js food blog, demonstrating practical application
-        of theoretical frameworks.
+        Machine Learning and Neural Networks, as well as refamiliarizing myself with backend development through 
+        Node.js, Express, and REST APIs. Upcoming projects include: Deep Learning models for NLP and Computer Vision, 
+        as well as a realtime Chat App using Node, Express, and WebSockets.
         <br></br>
         <br></br>
         The portfolio below showcases various projects that reflect both technical capabilities and commitment to continuous growth

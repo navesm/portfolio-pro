@@ -11,7 +11,7 @@ function Skills() {
     { title: "Python", description: "The most popular scripting and AI/ML choice", icon: <FaPython />, bgColor: "#306998", textColor: "#FFD43B" },
     { title: "React", description: "Building Scalable SPA's", icon: <FaReact />, bgColor: "#61dafb", textColor: "#20232A" },
     { title: "Jupyter Notebook", description: "Data analysis, Math-heavy computation, ML/DL/AI", icon: <SiJupyter />, bgColor: "#f37626" },
-    { title: "Databases/SQL", description: "SQL/noSQL data storage and retrieval", icon: <FaDatabase />, bgColor: "slategrey" }
+    { title: "Databases/SQL", description: "SQL for relational databases", icon: <FaDatabase />, bgColor: "slategrey" }
   ]
   return (
     <div>
