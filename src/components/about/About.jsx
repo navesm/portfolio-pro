@@ -13,7 +13,7 @@ function About() {
       </p>
       <br></br>
       <p>Currently pursuing a Computer Science/Software Engineering degree at Southern New Hampshire
-        University with a 3.96 GPA. My prior academic foundations include:
+        University with a 3.96 GPA, my prior academic foundations include:
         <br></br>
         <ul>
           <li>
