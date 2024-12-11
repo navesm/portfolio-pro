@@ -2,12 +2,13 @@ import React from 'react';
 import Card from '../Card/Card.jsx';
 import './Projects.css';
 import focusFitImage from '../../focus-fit.png';
+import youkanImage from '../../youkan-flow.png';
 
 const Projects = () => {
   const projects = [
     { title: 'Focus Fit', description: ' React | Supabase. The best dang exercise and study timer out there', link: 'https://focusfitapp.netlify.app', bgColor: "darkblue", imageUrl: focusFitImage },
-    { title: 'YouKanDoIt TaskBoard', description: 'A personal Kanban board for all your productivity needs.', link: '#', bgColor: '#333' },
-    { title: 'RealTime Chat App', description: 'Work in Progress. Check back soon!', link: '#', bgColor: '#049C67' }
+    { title: 'YouKanDoIt TaskBoard', description: 'A personal Kanban board for all your productivity needs.', link: 'https://youkanflow.netlify.app/', bgColor: '#333', imageUrl: youkanImage },
+    { title: 'Spock Rock', description: 'Play versus the computer in Rock, Paper, Scissors, Lizard, Spock!', link: '#', bgColor: '#049C67' }
   ];
 
   return (

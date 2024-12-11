@@ -35,9 +35,9 @@ function About() {
       </p>
       <br></br>
       <p>Beyond formal education, my current ongoing self-directed learning focuses on advanced topics like
-        Machine Learning and Neural Networks, as well as refamiliarizing myself with backend development through 
-        Node.js, Express, and REST APIs. Upcoming projects include: Deep Learning models for NLP and Computer Vision, 
-        as well as a realtime Chat App using Node, Express, and WebSockets.
+        Machine Learning and Neural Networks, as well as refamiliarizing myself with backend development through
+        Node.js, Express, and REST APIs. Currently, I'm working on adding authentication and persistence to the YouKan Flowboard
+        project below, after which a speech-to-text element for mobile use and manipulating tasks will be added.
         <br></br>
         <br></br>
         The portfolio below showcases various projects that reflect both technical capabilities and commitment to continuous growth
