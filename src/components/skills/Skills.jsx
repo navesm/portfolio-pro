@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card.jsx';
-import { FaPython, FaJsSquare, FaReact, FaDatabase } from 'react-icons/fa';
+import { FaPython, FaJsSquare, FaReact, FaDatabase, FaGitSquare, FaHtml5 } from 'react-icons/fa';
 import { SiJupyter } from 'react-icons/si';
 import './Skills.css';
 
@@ -11,7 +11,9 @@ function Skills() {
     { title: "Python", description: "The most popular scripting and AI/ML choice", icon: <FaPython />, bgColor: "#306998", textColor: "#FFD43B" },
     { title: "React", description: "Building Scalable SPA's", icon: <FaReact />, bgColor: "#61dafb", textColor: "#20232A" },
     { title: "Jupyter Notebook", description: "Data analysis, Math-heavy computation, ML/DL/AI", icon: <SiJupyter />, bgColor: "#f37626" },
-    { title: "Databases/SQL", description: "SQL for relational databases", icon: <FaDatabase />, bgColor: "slategrey" }
+    { title: "Databases/SQL", description: "SQL for relational databases", icon: <FaDatabase />, bgColor: "slategrey" },
+    { title: "Git and Version Control", description: "CLI Git for Version Control, with Github", icon: <FaGitSquare />, bgColor: "maroon" },
+    { title: "Hyper Text Markup Language", description: "Content Creation and DOM manipulation", icon: <FaHtml5 />, bgColor: "red" }
   ]
   return (
     <div>
