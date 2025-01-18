@@ -6,14 +6,11 @@ function About() {
     <div className="about-container">
       <h2>About</h2>
       <h3>At a glance</h3>
-      <p>Mathematics and computer science are more than academic pursuits - they represent the excitement
-        of problem-solving and the thrill of those breakthrough moments when complex concepts finally click into place.
-        This passion for understanding drives my excitement and commitment to continuous learning and real-world application for new skills.
-        <br></br>
-      </p>
+      <p>With eight years in supply chain operations, I’ve developed a proven ability to navigate fast-paced, high-production environments while managing competing priorities and solving problems proactively. My customer-facing roles taught me the importance of service and professionalism, skills I now bring to my transition into technology—a field I’ve grown deeply passionate about through my love for mathematics, problem-solving, and innovation.</p>
       <br></br>
-      <p>Currently pursuing a Computer Science/Software Engineering degree at Southern New Hampshire
-        University with a 3.96 GPA, my prior academic foundations include:
+      <p>After a suggestion from someone close to me, I discovered programming and quickly became captivated by the blend of technology and the exciting mathematics behind it all. This passion drives me as I juggle full-time work, full-time school, and family, pursuing a Bachelor of Science in Computer Science with a concentration in Software Engineering at Southern New Hampshire University, where I’ve maintained a 3.97 GPA as a junior.</p>
+      <br></br>
+      <p>Mathematics and computer science are more than academic pursuits to me—they embody the thrill of solving complex problems and those breakthrough moments when concepts click. My academic foundation includes coursework in:
         <br></br>
         <ul>
           <li>
@@ -32,16 +29,13 @@ function About() {
             Applied Linear Algebra
           </li>
         </ul>
+        alongside self-directed exploration of advanced topics like Machine Learning, Neural Networks, and backend development using Node.js, Express, and REST APIs.
       </p>
       <br></br>
-      <p>Beyond formal education, my current ongoing self-directed learning focuses on advanced topics like
-        Machine Learning and Neural Networks, as well as refamiliarizing myself with backend development through
-        Node.js, Express, and REST APIs. Currently, I'm working on a multiplayer pong game and the Practical Deep Learning for Coders course,
-        so a working deep learning model demo should be up shortly. Check back soon!
+      <p>I’m currently working on a multiplayer Pong game and completing the Practical Deep Learning for Coders course, aiming to showcase a working deep learning model demo soon. My portfolio below reflects my technical skills, passion for continuous growth, and commitment to solving real-world problems while creating value for communities.
         <br></br>
         <br></br>
-        The portfolio below showcases various projects that reflect both technical capabilities and commitment to continuous growth
-        in software engineering.
+        Collaborating with bright minds on impactful challenges in software engineering and machine learning excites me, and I’m eager to contribute to innovative solutions that shape the future of technology.
       </p>
 
     </div>
