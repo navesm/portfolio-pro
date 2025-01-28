@@ -29,10 +29,10 @@ function About() {
             Applied Linear Algebra
           </li>
         </ul>
-        alongside self-directed exploration of advanced topics like Machine Learning, Neural Networks, and backend development using Node.js, Express, and REST APIs.
+        alongside self-directed exploration of advanced topics like Machine Learning, Neural Networks, and Full-Stack development with Next.js and Firebase.
       </p>
       <br></br>
-      <p>I’m currently working on a multiplayer Pong game and completing the Practical Deep Learning for Coders course, aiming to showcase a working deep learning model demo soon. My portfolio below reflects my technical skills, passion for continuous growth, and commitment to solving real-world problems while creating value for communities.
+      <p>I’m currently working on adding touch events to the multiplayer Pong game for a better mobile experience and completing the Practical Deep Learning for Coders course, aiming to showcase a working deep learning model demo soon. My portfolio below reflects my technical skills, passion for continuous growth, and commitment to solving real-world problems while creating value for communities.
         <br></br>
         <br></br>
         Collaborating with bright minds on impactful challenges in software engineering and machine learning excites me, and I’m eager to contribute to innovative solutions that shape the future of technology.
