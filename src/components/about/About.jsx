@@ -28,8 +28,15 @@ function About() {
           <li>
             Applied Linear Algebra
           </li>
+          <li>
+            Programming Languages: Python, Java, C++
+          </li>
+          <li>
+            Object-Oriented Programming
+          </li>
         </ul>
-        alongside self-directed exploration of advanced topics like Machine Learning, Neural Networks, and Full-Stack development with Next.js and Firebase.
+        with current University courses in Software Development Life-Cycle and Operating Platforms,
+        alongside self-directed exploration of advanced topics like Machine Learning, Neural Networks, and Full-Stack development with React, Node.js, Supabase, and Firebase.
       </p>
       <br></br>
       <p>I’m currently working on adding touch events to the multiplayer Pong game for a better mobile experience and completing the Practical Deep Learning for Coders course, aiming to showcase a working deep learning model demo soon. My portfolio below reflects my technical skills, passion for continuous growth, and commitment to solving real-world problems while creating value for communities.
