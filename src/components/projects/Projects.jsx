@@ -13,9 +13,16 @@ const Projects = () => {
     { title: 'Scientific Calculator++', description: 'A scientific calculator that features a quadratic equation solver and prime factorization tool!', link: 'https://navesm.github.io/calculator/', bgColor: '#333', imageUrl: calculatorImage },
     { title: 'Spock Rock', description: 'Play versus the computer in Rock, Paper, Scissors, Lizard, Spock!', link: 'https://navesm.github.io/spock-rock/', bgColor: '#049C67', imageUrl: spockRockImage }
   ];
-  const dataProjects = [{ title: "Coming Soon", description: "Check back later" }];
+  const dataProjects = [
+    { title: "Dog Vision", description: "A multi-class classification model created with TensorFlow and Keras", bgColor: "green", link: "https://github.com/navesm/dog-vision/blob/main/dog_vision.ipynb" },
+    { title: "Heart Disease Classification", description: "A binary classification model to determine if a patient is likely to have heart disease from structured data", bgColor: "maroon", link: "https://github.com/navesm/heart-disease-classification/blob/master/end-to-end-heart-disease-classification.ipynb" },
+  ];
 
-  const schoolProjects = [{ title: "Coming Soon", description: "Links incoming!", bgColor: "darkblue" }];
+  const schoolProjects = [
+    { title: "The Corner Grocer", description: "A sales data analysis tool in C++ for the local Corner Grocer Store", bgColor: "darkblue", link: "https://github.com/navesm/cornerGrocer" },
+    { title: "The Game Room: Draw It or Lose It Design Document", description: "An operating platform software design document for The Game Room", bgColor: "#398", link: "https://github.com/navesm/CS230-Software-design-doc" },
+    { title: "Scrum Sprint Review and Retrospective for SNHU Travel project", description: "A Scrum Review and Retrospective", bgColor: "#049C67", link: "https://github.com/navesm/CS250-Scrum-docs/blob/master/CS250%20SDLC%20Sprint%20Review%20and%20Retrospective%20-%20Steven%20Nave.docx" },
+  ];
 
   return (
     <section className="projects">
