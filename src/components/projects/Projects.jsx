@@ -15,6 +15,8 @@ const Projects = () => {
   ];
   const dataProjects = [{ title: "Coming Soon", description: "Check back later" }];
 
+  const schoolProjects = [{ title: "Coming Soon", description: "Links incoming!", bgColor: "darkblue" }];
+
   return (
     <section className="projects">
       <h2>Projects</h2>
@@ -41,6 +43,26 @@ const Projects = () => {
       <h3>Data Analysis & Machine Learning</h3>
       <div className="projects-grid">
         {dataProjects.map((project, index) => (
+          <a href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Card
+              className="project-card"
+              key={index}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              bgColor={project.bgColor}
+              textColor={project.textColor}
+              image={project.imageUrl}
+            />
+          </a>
+        ))}
+      </div>
+      <h3>University Projects and Artifacts</h3>
+      <div className="projects-grid">
+        {schoolProjects.map((project, index) => (
           <a href={project.link}
             target="_blank"
             rel="noopener noreferrer"
