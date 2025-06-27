@@ -40,9 +40,15 @@ function About() {
           <li>
             Operating Platforms
           </li>
+          <li>
+            Intro to Robotics
+          </li>
+          <li>
+            System Design and Analysis
+          </li>
         </ul>
-        with current University courses in Robotics and System Design and Analysis,
-        alongside self-directed exploration of data structures and algorithms, data analysis and machine learning, as well as Full-Stack development with React, Node.js, Supabase, and PostgreSQL.
+        with current University courses in Data Structures and Algorithms and Software Security,
+        alongside self-directed exploration of algorithms, data analysis and machine learning, as well as Full-Stack development with React, Node.js, Supabase, and PostgreSQL.
       </p>
       <br></br>
       <p> I'm currently building a site for a local business client to increase their exposure and booking opportunities. My portfolio below reflects my technical skills, passion for continuous growth, and commitment to solving real-world problems while creating value for communities.
