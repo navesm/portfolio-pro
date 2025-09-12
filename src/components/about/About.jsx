@@ -46,9 +46,15 @@ function About() {
           <li>
             System Design and Analysis
           </li>
+          <li>
+            Data Structures and Algorithms: Analysis and Design
+          </li>
+          <li>
+            Software Security
+          </li>
         </ul>
-        with current University courses in Data Structures and Algorithms and Software Security,
-        alongside self-directed exploration of algorithms, data analysis and machine learning, as well as Full-Stack development with React, Node.js, Supabase, and PostgreSQL.
+        with current University courses in Cryptology and Software Testing/Automation QA,
+        alongside self-directed exploration of algorithms, as well as the course Practical Deep Learning for Coders. I hope to finish by Mid November with many ML/DL demos along the way.
       </p>
       <br></br>
       <p> I'm currently building a site for a local business client to increase their exposure and booking opportunities. My portfolio below reflects my technical skills, passion for continuous growth, and commitment to solving real-world problems while creating value for communities.

@@ -27,6 +27,28 @@ const Projects = () => {
   return (
     <section className="projects">
       <h2>Projects</h2>
+      <h3>Deep Learning Demos</h3>
+      <h4>Cat/Dog Classifier</h4>
+      {/* <h2>Cat vs Dog Classifier</h2>
+      <iframe
+        title="cat-dog-classifier"
+        src="https://huggingface.co/spaces/navesm95/cat-dog-classifier"
+        width="100%"
+        height="500px"
+        frameborder="0"
+        allowfullscreen
+      ></iframe> */}
+      Coming Soon...
+      <h4>Movie Sentiment Analyzer</h4>
+      {/* <iframe
+        title="movie-sentiment-analyzer"
+        src="https://huggingface.co/spaces/navesm95/movie-sentiment-analyzer"
+        width="100%"
+        height="500px"
+        frameborder="0"
+        allowfullscreen
+      ></iframe> */}
+      Coming soon...
       <h3>Web Development</h3>
       <div className="projects-grid">
         {webProjects.map((project, index) => (
