@@ -12,7 +12,7 @@ function Skills() {
     { title: "JavaScript", description: "The language of the Web", icon: <FaJsSquare />, bgColor: "#F7df1e", textColor: "#000" },
     { title: "Python", description: "The most popular scripting and AI/ML choice", icon: <FaPython />, bgColor: "#306998", textColor: "#FFD43B" },
     { title: "Java", description: "Powerful, platform-independent language for enterprises and mobile apps", icon: <FaJava />, bgColor: "#C82333", textColor: "#FFFFFF" },
-    { title: "C++", description: "High-performance language for system/software development and games", icon: <CgCPlusPlus />, bgColor: "#003B5C", textColor: "#FFFFFF" },
+    { title: "C++", description: "High-performance language for system/software development", icon: <CgCPlusPlus />, bgColor: "#003B5C", textColor: "#FFFFFF" },
     { title: "React", description: "Building Scalable SPA's", icon: <FaReact />, bgColor: "#61dafb", textColor: "#20232A" },
     { title: "Jupyter Notebook", description: "Data analysis, Math-heavy computation, ML/DL/AI", icon: <SiJupyter />, bgColor: "#f37626" },
     { title: "Databases/SQL", description: "SQL for relational databases", icon: <FaDatabase />, bgColor: "slategrey" },
