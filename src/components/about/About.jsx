@@ -57,8 +57,7 @@ function About() {
           <li>Introduction to Geographic Information Systems</li>
           <li>Computer Graphics and Visualization</li>
         </ul>
-        with current University courses in Mobile Architecture & Programming, and Client/Server Development;
-        alongside self-directed exploration of algorithms, Machine Learning, and AI agents.
+        Currently enrolled in university courses on Mobile Architecture & Programming and Client/Server Development, while also engaging in self-directed exploration of algorithms, machine learning, and AI agents.
       </p>
       <br></br>
       <p>My portfolio below reflects my technical skills, passion for continuous growth, and commitment to solving real-world problems while creating value for communities.
