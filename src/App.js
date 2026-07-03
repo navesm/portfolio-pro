@@ -12,48 +12,50 @@ import About from './components/about/About.jsx';
 import Skills from './components/skills/Skills.jsx';
 
 function App() {
-  const [showButton, setShowButton] = useState(null);
+  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-out-cubic',
+      offset: 80,
+    });
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      //Show button after scrolling past 200px
-      setShowButton(window.scrollY > 400);
+      setShowButton(window.scrollY > 500);
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" id="top">
       <NavBar />
       <Home className="home" />
-      <section id="about" data-aos="fade-left" data-aos-delay='50' data-aos-duration='1000'>
+      <section id="about" className="section-shell" data-aos="fade-up">
         <About />
       </section>
-      <section className="section-wrapper" id="projects" data-aos="fade-right" data-aos-delay='75' data-aos-duration='1000'>
+      <section id="projects" className="section-shell" data-aos="fade-up">
         <Projects />
       </section>
-      <section id="skills" data-aos="fade-left" data-aos-delay='75' data-aos-duration='1000'>
+      <section id="skills" className="section-shell" data-aos="fade-up">
         <Skills />
       </section>
-      <section className="section-wrapper" id="contact" data-aos="fade-right" data-aos-delay='75' data-aos-duration='1000'>
+      <section id="contact" className="section-shell" data-aos="fade-up">
         <Contact className="contact" />
       </section>
 
       {showButton && (
         <ScrollLink
-          to="root"
+          to="top"
           smooth={true}
           duration={650}
           className="back-to-top"
+          aria-label="Back to top"
         >
           <FaArrowCircleUp className="arrow" />
         </ScrollLink>

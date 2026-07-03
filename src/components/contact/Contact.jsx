@@ -6,45 +6,17 @@ import './Contact.css';
 function Contact() {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [successMessage, setSuccessMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => {
     setShowModal(false);
-    setSuccessMessage('');
-    setErrorMessage('');
-    setFormData({ name: '', email: '', message: '' })
-  }
+    setFormData({ name: '', email: '', message: '' });
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const form = e.target;
-    try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(form)).toString(),
-      });
-      if (response.ok) {
-        console.log('Form submitted successfully:', response);
-        setSuccessMessage('Your message was sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setErrorMessage('Something went wrong. Please try again later.');
-        console.error("Form submission error", response.statusText);
-      }
-    } catch (error) {
-      setErrorMessage('An error occurred. Please try again later.');
-      console.error('Form submission error:', error);
-    }
-  };
-
 
   return (
     <div>
@@ -66,20 +38,16 @@ function Contact() {
         </form>
       </footer>
       <Modal show={showModal} onClose={handleCloseModal}>
-        {successMessage && <p>{successMessage}</p>}
-        {errorMessage && <p className="error">{errorMessage}</p>}
         <form
           className="form"
-          onSubmit={handleSubmit}
           name="contact"
-          method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <div>
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="bot-field" />
 
+          <div>
             <label>
               Name:
               <input

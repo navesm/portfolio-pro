@@ -1,4 +1,23 @@
 .about-container {
-  font-size: 1.5rem;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 2rem 1.25rem;
+  color: var(--text);
+}
+
+.about-container h2 {
+  margin: 0.25rem 0 1rem;
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+}
+
+.about-container p {
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 860px;
+}
+
+.about-highlights {
+  display: grid;
+  gap: 0.7rem;
+  padding-left: 1.2rem;
+  color: #dbeafe;
+  margin-top: 1rem;
 }

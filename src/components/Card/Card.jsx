@@ -1,13 +1,14 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ icon, title, description, link, bgColor, textColor, className, image }) => {
+const Card = ({ icon, title, description, link, bgColor, textColor, className, image, tags }) => {
   const cardStyle = {
-    backgroundColor: bgColor || '#444',
-    color: textColor || '#4CAF50;'
-  }
+    background: bgColor || '#1f2937',
+    color: textColor || '#f8fafc'
+  };
 
   const cardClasses = `card ${link ? 'has-link' : ''} ${className || ''}`;
+
   return (
     <div className={cardClasses} style={cardStyle}>
       {image && (
@@ -20,20 +21,27 @@ const Card = ({ icon, title, description, link, bgColor, textColor, className, i
       <h2>{icon}</h2>
       <h3>{title}</h3>
       <p>{description}</p>
-      <a href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="card-link"
-      >
-        {link ?
-          <span>View {title}</span>
-          :
-          <span></span>
-        }
-
-      </a>
+      {tags?.length > 0 && (
+        <div className="card-tags">
+          {tags.map((tag) => (
+            <span key={tag} className="card-tag">{tag}</span>
+          ))}
+        </div>
+      )}
+      {link ? (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-link"
+        >
+          View project
+        </a>
+      ) : (
+        <span className="card-link muted-link">In progress</span>
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default Card;

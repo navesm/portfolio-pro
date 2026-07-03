@@ -4,70 +4,24 @@ import './About.css';
 function About() {
   return (
     <div className="about-container">
-      <h2>About</h2>
-      <h3>At a glance</h3>
-      <p>With eight years in supply chain operations, I’ve developed a proven ability to navigate fast-paced, high-production environments while managing competing priorities and solving problems proactively. My customer-facing roles taught me the importance of service and professionalism, skills I now bring to my transition into technology—a field I’ve grown deeply passionate about through my love for mathematics, problem-solving, and innovation.</p>
-      <br></br>
-      <p>After a suggestion from someone close to me, I discovered programming and quickly became captivated by the blend of technology and the exciting mathematics behind it all. This passion drives me as I juggle full-time work, full-time school, and family, pursuing a Bachelor of Science in Computer Science with a concentration in Software Engineering, as well as a minor in Applied Mathematics, at Southern New Hampshire University, where I’ve maintained a 3.92 GPA as a Senior. I will be graduating in summer of 2026</p>
-      <br></br>
-      <p>Mathematics and computer science are more than academic pursuits to me—they embody the thrill of solving complex problems and those breakthrough moments when concepts click. My academic foundation includes coursework in:
-        <br></br>
-        <ul>
-          <li>
-            Application Development
-          </li>
-          <li>
-            Structured Database Environments
-          </li>
-          <li>
-            Discrete Math
-          </li>
-          <li>
-            Applied Statistics for STEM
-          </li>
-          <li>
-            Applied Linear Algebra
-          </li>
-          <li>
-            Programming Languages: Python, Java, C++
-          </li>
-          <li>
-            Object-Oriented Programming
-          </li>
-          <li>
-            Software Development Life-Cycle (SDLC)
-          </li>
-          <li>
-            Operating Platforms
-          </li>
-          <li>
-            Intro to Robotics
-          </li>
-          <li>
-            System Design and Analysis
-          </li>
-          <li>
-            Data Structures and Algorithms: Analysis and Design
-          </li>
-          <li>
-            Software Security
-          </li>
-          <li>Cryptology</li>
-          <li>Software Testing and Automation QA</li>
-          <li>Introduction to Geographic Information Systems</li>
-          <li>Computer Graphics and Visualization</li>
-        </ul>
-        Currently enrolled in university courses on Mobile Architecture & Programming and Client/Server Development, while also engaging in self-directed exploration of algorithms, machine learning, and AI agents.
+      <p className="section-label">About</p>
+      <h2>I bring a systems mindset to software, data, and AI.</h2>
+      <p>
+        I’m a driven software engineering professional with a systems-oriented mindset and a strong foundation in full-stack development, cloud technologies, and applied AI. My background in high-pressure operations has sharpened my ability to deliver reliable solutions under tight constraints while maintaining clear communication and cross-functional collaboration.
       </p>
-      <br></br>
-      <p>My portfolio below reflects my technical skills, passion for continuous growth, and commitment to solving real-world problems while creating value for communities.
-        <br></br>
-        <br></br>
-        Collaborating with bright minds on impactful challenges in software engineering and machine learning excites me, and I’m eager to contribute to innovative solutions that shape the future of technology.
+      <p>
+        I’m currently completing a B.S. in Computer Science (Software Engineering concentration) with a minor in Applied Mathematics at Southern New Hampshire University, where I maintain a 3.89 GPA and expect to graduate in Winter 2026.
       </p>
-
+      <p>
+        My technical experience includes building production-grade full-stack applications, designing APIs and integrations, and developing intelligent systems using modern tools and cloud platforms. I’m particularly passionate about creating dependable software that solves real business problems by connecting strong user experiences with robust backend architecture and intelligent automation.
+      </p>
+      <ul className="about-highlights">
+        <li>Full-stack web development (React, Node.js, MEAN stack, modern APIs)</li>
+        <li>ML and AI demos with Python, Streamlit, and Hugging Face concepts</li>
+        <li>Software design, databases, testing, and system reliability</li>
+      </ul>
     </div>
   );
-};
+}
 
 export default About;

@@ -1,20 +1,29 @@
+.skills-section {
+  padding: 2rem 1.25rem;
+}
+
+.skills-section h2 {
+  margin: 0.35rem 0 1rem;
+  font-size: clamp(1.4rem, 2.3vw, 2rem);
+  max-width: 760px;
+}
+
 .skill-card {
-  width: 150px;
-  height: 200px;
-  margin: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: min(178px, 100%);
+  min-height: 220px;
+  margin: 0;
+  box-shadow: 0 10px 24px rgba(2, 8, 23, 0.16);
   transition: transform 0.2s ease;
 }
 
 .skill-card:hover {
-  transform: none;
-  cursor: none;
+  transform: translateY(-4px);
+  cursor: default;
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 1rem;
+  padding: 0.25rem 0 0;
 }

@@ -1,14 +1,15 @@
 .cta {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 100px 40px 0px 40px;
+  padding: 1rem 0 2rem;
 }
 
 .icon {
@@ -18,22 +19,24 @@
 }
 
 .icon:hover {
-  color: #5ad1a2;
+  color: #5eead4;
 }
 
 .form {
-  color: darkGreen;
-  font-family: 'Courier New', Courier, monospace;
+  color: #e2e8f0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 .button {
-  size: 1rem;
-  background-color: Green;
-  color: whitesmoke;
-  border-radius: 10px;
-  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+  color: #02111d;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .button:hover {
-  cursor: pointer;
+  opacity: 0.95;
 }
