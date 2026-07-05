@@ -4,6 +4,7 @@ import './Projects.css';
 import focusFitImage from '../../focus-fit.png';
 // import spockRockImage from '../../spock-rock.png';
 // import mazeImage from '../../maze-shot.png';
+import travlrImage from '../../Travlr-Express-shot.png';
 import pongImage from '../../pong-shot.png';
 import dogVisionImage from '../../dog-vision.png';
 import heartDiseaseImage from '../../heart-disease.png';
@@ -12,8 +13,22 @@ import sentimentImage from '../../sentiment-image.png';
 const Projects = () => {
   const fullStackProjects = [ 
     {
+      title: 'Travlr Express',
+      description: 'A full-stack travel booking customer-facing app built with JavaScript, Node.js, Express, and MongoDB, featuring dynamic itineraries on the Travel page pulled from a MongoDB Atlas database. Admin dashboard SPA built with Angular to follow.',
+      link: 'https://mean-travlr.onrender.com/',
+      imageUrl: travlrImage,
+      bgColor: '#1e293b',
+      tags: ['JavaScript', 'Node.js', 'Express', 'MongoDB']
+    },
+    {
+      title: 'Travlr Admin Dashboard',
+      description: 'The Angular SPA admin dashboard for Travlr Express, featuring trips management, with a live MongoDB Atlas database and demo. Be careful when toying with it, please!',
+      bgColor: '#1e293b',
+      tags: ['Angular', 'Node.js', 'Express', 'MongoDB']
+    },
+    {
       title: 'Focus Fit',
-      description: 'A full-stack productivity platform built with React and Supabase, featuring auth, analytics, and tailored study and exercise plans.',
+      description: 'A full-stack productivity platform built with React and Supabase, featuring authorization and user management.',
       link: 'https://focusfitapp.netlify.app',
       bgColor: '#102a43',
       imageUrl: focusFitImage,
@@ -70,12 +85,11 @@ const Projects = () => {
       tags: ['TensorFlow', 'Computer Vision']
     },
     {
-      title: 'Movie Sentiment Analyzer',
-      description: 'A Hugging Face-style NLP demo for sentiment analysis using text classification and transformer-based ideas.',
+      title: 'Generative AI Finance Application Demo',
+      description: 'A demo of a generative AI application that provides financial insights and recommendations based on user input of stock tickers and financial data.',
       bgColor: '#475569',
-      link: 'https://huggingface.co/spaces/navesm95/movie-sentiment-analyzer',
       imageUrl: sentimentImage,
-      tags: ['Hugging Face', 'NLP', 'Streamlit']
+      tags: ['Python', 'NLP', 'Streamlit']
     },
     {
       title: 'Heart Disease Classification',
