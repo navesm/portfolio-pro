@@ -8,9 +8,9 @@ import { CgCPlusPlus } from 'react-icons/cg';
 
 function Skills() {
   const skills = [
-    { title: 'JavaScript', description: 'Modern web interactivity and UI development', icon: <FaJsSquare />, bgColor: '#f7df1e', textColor: '#000' },
+    { title: 'JavaScript', description: 'Modern web interactivity and UI development', icon: <FaJsSquare />, bgColor: '#d6bf09', textColor: '#000' },
     { title: 'Python', description: 'Core language for automation, data science, and AI prototyping', icon: <FaPython />, bgColor: '#306998', textColor: '#ffd43b' },
-    { title: 'React', description: 'Building scalable, polished single-page applications', icon: <FaReact />, bgColor: '#61dafb', textColor: '#20232a' },
+    { title: 'React', description: 'Building scalable, polished single-page applications', icon: <FaReact />, bgColor: '#2bbde5', textColor: '#20232a' },
     { title: 'Java', description: 'Enterprise-ready, object-oriented software development', icon: <FaJava />, bgColor: '#c82333', textColor: '#fff' },
     { title: 'C++', description: 'Performance-oriented systems and algorithmic work', icon: <CgCPlusPlus />, bgColor: '#003b5c', textColor: '#fff' },
     { title: 'SQL & Databases', description: 'Relational data modeling and query-driven applications', icon: <FaDatabase />, bgColor: '#475569' },

@@ -24,7 +24,7 @@ const Projects = () => {
     },
     {
       title: 'Travlr Admin Dashboard',
-      description: 'The Angular SPA admin dashboard for Travlr Express, featuring trips management, with a live MongoDB Atlas database and demo. Be careful when toying with it, please!',
+      description: 'The Angular SPA admin dashboard for Travlr Express, featuring trips management, with a live MongoDB Atlas database and demo. Be careful when toying with it, please! Currently being tested for production and operationalization.',
       bgColor: '#1e293b',
       tags: ['Angular', 'Node.js', 'Express', 'MongoDB']
     },
@@ -96,7 +96,7 @@ const Projects = () => {
     },
     {
       title: 'Customer Sentiment Analyzer',
-      description: 'Interactive demo of a sentiment analysis model that classifies customer feedback as positive, negative. Batch analysis of CSV files of reviews with visualizations of sentiment distribiution is also supported.',
+      description: 'Interactive demo of a sentiment analysis model that classifies customer feedback as positive, negative. Batch analysis of CSV files of reviews with visualizations of sentiment distribiution is also in development.',
       bgColor: '#7f1d1d',
       link: 'https://huggingface.co/spaces/navesm95/sentiment-analyzer',
       imageUrl: sentimentImage,
