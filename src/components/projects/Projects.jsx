@@ -9,6 +9,8 @@ import pongImage from '../../pong-shot.png';
 import dogVisionImage from '../../dog-vision.png';
 import heartDiseaseImage from '../../heart-disease.png';
 import sentimentImage from '../../sentiment-image.png';
+import mealPlannerImage from '../../meal-planner.png';
+import aiFinanceImage from '../../ai-finance-shot.png';
 
 const Projects = () => {
   const fullStackProjects = [ 
@@ -62,42 +64,62 @@ const Projects = () => {
 
   const aiAgentProjects = [
     {
-      title: 'AI Agent Workflow Prototypes',
-      description: 'Exploring agentic systems, tool use, and automation patterns for practical, user-facing AI assistants.',
+      title: 'AI Sommelier Agent',
+      description: 'Fine-tuned language model for wine recommendation and pairing suggestions.',
       bgColor: '#1e293b',
-      tags: ['Python', 'LLMs', 'Automation']
+      tags: ['Python', 'LLMs', 'NLP', 'Recommendation Systems']
     },
     {
-      title: 'Human-in-the-Loop AI Assistants',
-      description: 'Designing workflows that combine model reasoning with reliability, evaluation, and clear escalation paths.',
+      title: 'AI JokeBot with LangGraph',
+      description: 'A joke-generation agent built with LangGraph, showcasing prompt design and reliability in AI interactions.',
       bgColor: '#0f3d3e',
-      tags: ['Prompt Design', 'Reliability', 'Evaluation']
+      tags: ['Python', 'LLMs', 'NLP', 'Agent Design']
     }
   ];
 
   const mlDemos = [
     {
-      title: 'Dog Vision',
-      description: 'A TensorFlow/Keras image classifier that identifies dog breeds from uploaded photos.',
+      title: 'AI Daily Meal Planner',
+      description: 'A daily meal planning application that uses Generative AI to suggest recipes based on user-supplied ingredients, and generate an image for each recipe.',
       bgColor: '#166534',
-      link: 'https://github.com/navesm/dog-vision/blob/main/dog_vision.ipynb',
-      imageUrl: dogVisionImage,
-      tags: ['TensorFlow', 'Computer Vision']
+      link: 'https://huggingface.co/spaces/navesm95/meal-planner',
+      imageUrl: mealPlannerImage,
+      tags: ['Generative AI', 'Recipe Generation', 'Natural Language Processing', 'Image Generation']
     },
     {
       title: 'Generative AI Finance Application Demo',
       description: 'A demo of a generative AI application that provides financial insights and recommendations based on user input of stock tickers and financial data.',
       bgColor: '#475569',
-      imageUrl: sentimentImage,
+      link: '',
+      imageUrl: aiFinanceImage,
       tags: ['Python', 'NLP', 'Streamlit']
     },
     {
-      title: 'Heart Disease Classification',
-      description: 'A binary classifier that predicts heart disease risk from structured health data.',
+      title: 'Customer Sentiment Analyzer',
+      description: 'Interactive demo of a sentiment analysis model that classifies customer feedback as positive, negative. Batch analysis of CSV files of reviews with visualizations of sentiment distribiution is also supported.',
       bgColor: '#7f1d1d',
-      link: 'https://github.com/navesm/heart-disease-classification/blob/master/end-to-end-heart-disease-classification.ipynb',
+      link: 'https://huggingface.co/spaces/navesm95/sentiment-analyzer',
+      imageUrl: sentimentImage,
+      tags: ['Python', 'NLP', 'Transformers', 'Streamlit']
+    }
+  ];
+
+  const dataScienceProjects = [
+    {
+      title: 'Dog Vision',
+      description: 'A TensorFlow/Keras image classifier that identifies dog breeds from uploaded photos.',
+      bgColor: '#0f3e23',
+      link: 'https://github.com/navesm/dog-vision/blob/main/dog_vision.ipynb',
+      imageUrl: dogVisionImage,
+      tags: ['TensorFlow', 'Computer Vision']
+    },
+    {
+      title: 'Heart Disease Classification',
+      description: 'A machine learning model that predicts the likelihood of heart disease based on patient data.',
+      bgColor: '#a31306',
+      link: 'https://github.com/navesm/heart-disease-classification/blob/main/heart_disease_classification.ipynb',
       imageUrl: heartDiseaseImage,
-      tags: ['Scikit-learn', 'Classification', 'ML']
+      tags: ['Python', 'Scikit-learn', 'Data Analysis']
     }
   ];
 
@@ -149,6 +171,25 @@ const Projects = () => {
         <h3>AI/ML Demos</h3>
         <div className="projects-grid">
           {mlDemos.map((project, index) => (
+            <Card
+              className="project-card"
+              key={`${project.title}-${index}`}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              bgColor={project.bgColor}
+              textColor={project.textColor}
+              image={project.imageUrl}
+              tags={project.tags}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="project-section">
+        <h3>Data Science</h3>
+        <div className="projects-grid">
+          {dataScienceProjects.map((project, index) => (
             <Card
               className="project-card"
               key={`${project.title}-${index}`}
